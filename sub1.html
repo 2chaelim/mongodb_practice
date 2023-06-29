@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sub1</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  h2 {
+    padding: 4rem 0;
+  }
+  label {
+    display: block;
+    padding: 1rem 0;
+  }
+  a {
+    font-size: 1.5rem;
+  }
+</style>
+<body>
+  <h2>sub1-page</h2>
+  <ul>
+    <li><a href="/">go main</a></li>
+    <li><a href="/sub1">here</a></li>
+    <li><a href="/sub2">go sub2-page</a></li>
+  </ul>
+  <h2>Todo list</h2>
+  <!-- method활용 post요청 -->
+  <form action="/add" method="post">
+    <label>Todo : <input type="text" name="list" /></label>
+    <label>Date : <input type="date" name="date" /></label>
+    <label>Feeling : <input type="text" name="happy"/></label>
+    <input type="submit" value="send" />
+  </form>
+</body>
+</html>
